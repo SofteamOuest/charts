@@ -10,7 +10,7 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
+    - port: 5432
       targetPort: 5432
   selector:
     app: {{ template "evenement-parcours-integration.name" . }}-postgres
