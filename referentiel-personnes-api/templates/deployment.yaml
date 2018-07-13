@@ -27,6 +27,12 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+          env:
+          - name: dropbox.token
+            valueFrom:
+              secretKeyRef:
+                name: dropbox
+                key: token
 #          livenessProbe:
 #            httpGet:
 #              path: /
