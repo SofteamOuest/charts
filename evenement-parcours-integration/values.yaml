@@ -9,6 +9,11 @@ image:
   tag: stable
   pullPolicy: IfNotPresent
 
+image_pg:
+  repository: registry.k8.wildwidewest.xyz/repository/docker-repository/pocs/meltingpoc-evenement-parcours-integration-postgres
+  tag: stable
+  pullPolicy: IfNotPresent
+
 service:
   type: ClusterIP
   port: 80
