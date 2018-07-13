@@ -3,7 +3,7 @@ entries:
   api-gateway:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-13T12:35:09.004186576+02:00
+    created: 2018-07-13T13:37:31.637636092+02:00
     description: A Helm chart for Kubernetes
     digest: 78a5942a02531521279e0b92254fd706444257574eaa05832d5885f4dbbbc7c1
     name: api-gateway
@@ -12,7 +12,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 0.1.1
-    created: 2018-07-13T12:35:09.003940238+02:00
+    created: 2018-07-13T13:37:31.637410531+02:00
     description: A Helm chart for Kubernetes
     digest: 89d42eeab62c83602bbedfd9d082c5962262852255217b13227abe649470264f
     name: api-gateway
@@ -22,7 +22,16 @@ entries:
   evenement-parcours-integration:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-13T12:35:09.004403111+02:00
+    created: 2018-07-13T13:37:31.638072984+02:00
+    description: A Helm chart for Kubernetes
+    digest: 8999147864d02e2c615bafafcfba58d8acb80676dde2f247036366388e98dc58
+    name: evenement-parcours-integration
+    urls:
+    - https://softeamouest.github.io/charts/evenement-parcours-integration-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-07-13T13:37:31.637846428+02:00
     description: A Helm chart for Kubernetes
     digest: b58514512d0c44d65593135acf5b520d561d1fe72f643de00ac3113d6708dbe7
     name: evenement-parcours-integration
@@ -32,7 +41,7 @@ entries:
   evenement-rappel:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-13T12:35:09.004631394+02:00
+    created: 2018-07-13T13:37:31.638278037+02:00
     description: A Helm chart for Kubernetes
     digest: 0c79fb4830d2f78e2e1c690db7a2ac5f3928efe21ba09c8164e405f657390ceb
     name: evenement-rappel
@@ -42,7 +51,7 @@ entries:
   gestion-evenement:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-13T12:35:09.004860366+02:00
+    created: 2018-07-13T13:37:31.638491512+02:00
     description: A Helm chart for Kubernetes
     digest: 84c40045c5d96136270424f5b7c0e5c890e4869e1dac40bf3ee76f710afd1325
     name: gestion-evenement
@@ -52,7 +61,7 @@ entries:
   parcours-integration:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-13T12:35:09.005087107+02:00
+    created: 2018-07-13T13:37:31.638727387+02:00
     description: A Helm chart for Kubernetes
     digest: a4b91375fe26e30c2a4fd2d6b2f6bdd9fc6f2ae9e5aec4bdaa92db07d534c8d9
     name: parcours-integration
@@ -62,11 +71,11 @@ entries:
   referentiel-personnes-api:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-13T12:35:09.005306744+02:00
+    created: 2018-07-13T13:37:31.63893397+02:00
     description: A Helm chart for Kubernetes
     digest: 4114d70377b0e4a38c1b3f455ca972e575554a4a640fa9cab613db8f56a26d1f
     name: referentiel-personnes-api
     urls:
     - https://softeamouest.github.io/charts/referentiel-personnes-api-0.1.0.tgz
     version: 0.1.0
-generated: 2018-07-13T12:35:09.003583575+02:00
+generated: 2018-07-13T13:37:31.637072209+02:00
