@@ -10,7 +10,8 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - targetPort: 27017
+  - port: 27017
+    targetPort: 27017
   selector:
     app: {{ template "referentiel-personnes-api.name" . }}-mongo
     release: {{ .Release.Name }}
