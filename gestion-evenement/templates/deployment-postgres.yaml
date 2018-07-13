@@ -1,32 +1,30 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: {{ template "gestion-evenement.fullname" . }}
+  name: {{ template "gestion-evenement.fullname" . }}-postgres
   labels:
-    app: {{ template "gestion-evenement.name" . }}
-    chart: {{ template "gestion-evenement.chart" . }}
+    app: {{ template "gestion-evenement.name" . }}-postgres
+    chart: {{ template "gestion-evenement.chart" . }}-postgres
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ template "gestion-evenement.name" . }}
+      app: {{ template "gestion-evenement.name" . }}-postgres
       release: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: {{ template "gestion-evenement.name" . }}
+        app: {{ template "gestion-evenement.name" . }}-postgres
         release: {{ .Release.Name }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: "{{ .Values.image.repository }}-postgres:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
-              containerPort: 80
-              protocol: TCP
+            - containerPort: 5432
 #          livenessProbe:
 #            httpGet:
 #              path: /
