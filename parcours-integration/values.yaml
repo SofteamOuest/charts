@@ -16,15 +16,16 @@ service:
 ingress:
   enabled: true
   annotations:
+    certmanager.k8s.io/cluster-issuer: letsencrypt-issuer
     kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/tls-acme: "true"
   path: /
   hosts:
     - parcours-integration.k8.wildwidewest.xyz
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
+  tls:
+    - hosts:
+      - parcours-integration.k8.wildwidewest.xyz
+    secretName: certificate
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
