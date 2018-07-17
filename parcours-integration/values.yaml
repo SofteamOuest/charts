@@ -23,7 +23,7 @@ ingress:
   hosts:
     - parcours-integration.k8.wildwidewest.xyz
   tls:
-    - hosts:
+    hosts:
       - parcours-integration.k8.wildwidewest.xyz
     secretName: certificate
 
