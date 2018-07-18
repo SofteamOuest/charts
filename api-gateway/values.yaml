@@ -26,7 +26,7 @@ ingress:
   tls:
   - hosts:
     - meltingpoc.k8.wildwidewest.xyz
-  secretName: certificate
+    secretName: certificate
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
