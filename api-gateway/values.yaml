@@ -13,15 +13,15 @@ service:
   type: ClusterIP
   port: 80
 
-ingress: true
-  enabled: false
+ingress:
+  enabled: true
   annotations:
     certmanager.k8s.io/cluster-issuer: letsencrypt-issuer
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - meltingpoc.k8.wildwidewest.xyz
+  - meltingpoc.k8.wildwidewest.xyz
   secretName: certificate
 
 resources:
@@ -30,10 +30,10 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   limits:
-  #  cpu: 100m
+    #  cpu: 100m
     memory: 256Mi
   requests:
-  #  cpu: 100m
+    #  cpu: 100m
     memory: 128Mi
 
 nodeSelector: {}
