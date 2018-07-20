@@ -9,5 +9,5 @@ spec:
   - ReadWriteOnce
   nfs:
     path: /zpool-126262/WWWGRAV
-    server: 149.202.62.97
+    server: 10.16.103.9
   persistentVolumeReclaimPolicy: Recycle
