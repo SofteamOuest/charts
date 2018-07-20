@@ -27,6 +27,9 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+          volumeMounts:
+          - mountPath: /var/www/html
+            name: grav-home
 #          livenessProbe:
 #            httpGet:
 #              path: /
@@ -51,3 +54,7 @@ spec:
     {{- end }}
       imagePullSecrets:
       - name: regsecret
+      volumes:
+      - name: grav-home
+        persistentVolumeClaim:
+        claimName: pvc-grav
