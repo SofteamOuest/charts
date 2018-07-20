@@ -9,5 +9,5 @@ spec:
   - ReadWriteOnce
   nfs:
     path: /zpool-126262/WWWGRAV
-    server: "{{groups['nfs-master'][0] }}"
+    server: 149.202.62.97
   persistentVolumeReclaimPolicy: Recycle
