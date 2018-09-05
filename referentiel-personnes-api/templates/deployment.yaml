@@ -33,6 +33,8 @@ spec:
               secretKeyRef:
                 name: dropbox
                 key: token
+          - name: "mongodb_service"
+            value: {{ .Release.Name }}-mongo
 #          livenessProbe:
 #            httpGet:
 #              path: /
