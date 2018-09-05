@@ -29,7 +29,7 @@ spec:
               protocol: TCP
           env:
             - name: "jdbc_service"
-              value: {{ .Values.jdbc.service }}
+              value: {{ .Release.Name }}-postgres
 #          livenessProbe:
 #            httpGet:
 #              path: /
