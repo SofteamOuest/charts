@@ -20,7 +20,7 @@ ingress:
     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
   path: /
   hosts:
-    - chart-example.local
+  - chart-example.local
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
@@ -43,3 +43,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+jdbc:
+  service: gestion-evenement-master

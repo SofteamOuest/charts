@@ -27,6 +27,9 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+          env:
+            - name: "jdbc_service"
+              value: {{ .Values.jdbc.service }}
 #          livenessProbe:
 #            httpGet:
 #              path: /
