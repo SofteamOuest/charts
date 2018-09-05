@@ -27,6 +27,11 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+          env:
+            - name: "evenement_parcours_integration_url"
+              value: evenement-parcours-integration-{{ .Values.env }}
+            - name: "referentiel_personnes_api_url"
+              value: referentiel-personnes-api-{{ .Values.env }}
 #          livenessProbe:
 #            httpGet:
 #              path: /

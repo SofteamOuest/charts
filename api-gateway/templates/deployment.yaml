@@ -27,6 +27,17 @@ spec:
             - name: http
               containerPort: 8080
               protocol: TCP
+          env:
+            - name: "referentiel_personnes_api_url"
+              value: referentiel-personnes-api-{{ .Values.env }}
+            - name: "gestion_personnes_api_url"
+              value: gestion-personnes-{{ .Values.env }}
+            - name: "referentiel_personnes_ui_url"
+              value: referentiel-personnes-ui-{{ .Values.env }}
+            - name: "gestion_images_url"
+              value: gestion-images-{{ .Values.env }}
+            - name: "gestion_evenement_url"
+              value: gestion-evenement-{{ .Values.env }}
 #          livenessProbe:
 #            httpGet:
 #              path: /
