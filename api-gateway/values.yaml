@@ -21,11 +21,11 @@ ingress:
     kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-  - meltingpoc
+  - meltingpoc.k8.wildwidewest.xyz
   secretName: certificate
   tls:
   - hosts:
-    - meltingpoc
+    - meltingpoc.k8.wildwidewest.xyz
     secretName: certificate
 
 resources:
@@ -48,4 +48,4 @@ affinity: {}
 
 env: ''
 
-domain: k8.wildwidewest.xyz
+domain: 'k8.wildwidewest.xyz'
