@@ -21,7 +21,7 @@ ingress:
     kubernetes.io/tls-acme: "true"
   path: /
   hosts:
-    - parcours-integration.k8.wildwidewest.xyz
+  - parcours-integration{{ .Values.env }}.k8.wildwidewest.xyz
   secretName: certificate
 
 resources:
@@ -41,3 +41,5 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+env: ''
