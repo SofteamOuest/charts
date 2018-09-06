@@ -29,15 +29,15 @@ spec:
               protocol: TCP
           env:
             - name: "referentiel_personnes_api_url"
-              value: referentiel-personnes-api-{{ .Values.env }}
+              value: referentiel-personnes-api
             - name: "gestion_personnes_api_url"
-              value: gestion-personnes-{{ .Values.env }}
+              value: gestion-personnes
             - name: "referentiel_personnes_ui_url"
-              value: referentiel-personnes-ui-{{ .Values.env }}
+              value: referentiel-personnes-ui
             - name: "gestion_images_url"
-              value: gestion-images-{{ .Values.env }}
+              value: gestion-images
             - name: "gestion_evenement_url"
-              value: gestion-evenement-{{ .Values.env }}
+              value: gestion-evenement
 #          livenessProbe:
 #            httpGet:
 #              path: /
