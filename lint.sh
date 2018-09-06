@@ -6,4 +6,5 @@ helm lint evenement-rappel
 helm lint gestion-evenement
 helm lint gestion-personnes
 helm lint parcours-integration
+helm lint referentiel-personnes-mock
 helm lint referentiel-personnes-api
