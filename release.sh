@@ -1,4 +1,4 @@
-version=0.1.44
+version=0.1.45
 
 helm package --version $version api-gateway
 helm package --version $version evenement-parcours-integration
