@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "skills-api.fullname" . }}
+  labels:
+    app: {{ template "skills-api.name" . }}
+    chart: {{ template "skills-api.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "skills-api.name" . }}
+    release: {{ .Release.Name }}
