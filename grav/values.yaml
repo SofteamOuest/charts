@@ -23,6 +23,10 @@ ingress:
   hosts:
     - grav.k8.wildwidewest.xyz
   secretName: certificate
+  tls:
+    - hosts:
+        - grav.k8.wildwidewest.xyz
+      secretName: certificate
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
