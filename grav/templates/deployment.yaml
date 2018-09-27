@@ -29,7 +29,9 @@ spec:
               protocol: TCP
           volumeMounts:
           - mountPath: /var/www/html/user/pages
-            name: grav-home
+            name: grav-pages
+          - mountPath: /var/www/html/user/accounts
+            name: grav-accounts
 #          livenessProbe:
 #            httpGet:
 #              path: /
@@ -55,6 +57,9 @@ spec:
       imagePullSecrets:
       - name: regsecret
       volumes:
-      - name: grav-home
+      - name: grav-pages
         persistentVolumeClaim:
-          claimName: pvc-grav
+          claimName: grav-pages
+      - name: grav-accounts
+        persistentVolumeClaim:
+          claimName: grav-accounts
