@@ -8,6 +8,6 @@ spec:
   accessModes:
   - ReadWriteOnce
   nfs:
-    path: /zpool-126262/WWWGRAV
+    path: /zpool-126262/WWWGRAV/pages
     server: 10.16.103.9
   persistentVolumeReclaimPolicy: Recycle
