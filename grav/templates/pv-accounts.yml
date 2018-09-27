@@ -12,5 +12,4 @@ spec:
     server: 10.16.103.9
   persistentVolumeReclaimPolicy: Recycle
   claimRef:
-    namespace: default
     name: grav-accounts
