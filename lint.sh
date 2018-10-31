@@ -9,3 +9,4 @@ helm lint parcours-integration
 helm lint referentiel-personnes-mock
 helm lint referentiel-personnes-api
 helm lint skills-api
+helm lint elasticsearch
